@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Hello World project pusher"
+git commit -m "(C - Variables, if, else, while) project pusher"
 git push
