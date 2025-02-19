@@ -19,6 +19,9 @@ int main(void)
 	while (digit >= 10){
 		digit %= 10;
 	}
+	while (digit <= -10){
+		digit %= -10;
+	}
 	if (digit > 5){
 		printf("Last digit of %d is %d and is greater than 5", n, digit);
 	}
