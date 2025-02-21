@@ -6,7 +6,7 @@
  *
  * Return: .
  */
-int print_sign(int c)
+int _abs(int c)
 {
 	int i;
 
