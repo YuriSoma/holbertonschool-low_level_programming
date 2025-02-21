@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <ctype.h>
 
 /**
  * _islower - checks if a character is lowercase or not
