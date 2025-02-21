@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
- * print_alphabet - print all alphabets
+ * print_alphabet_x10 - print all alphabets
  *
  *
  */
