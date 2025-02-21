@@ -10,17 +10,19 @@
  */
 int print_sign(int c)
 {
+	int i;
 	if (c > 0)
 	{
 		_putchar('+');
-		return (1);
+		i = 1;
 	} else if (c < 0)
 	{
 		_putchar('-');
-		return (-1);
+		i = -1;
 	} else if (c == 0)
 	{
 		_putchar('0');
-		return (0);
+		i = 0;
 	}
+	return (i);
 }
