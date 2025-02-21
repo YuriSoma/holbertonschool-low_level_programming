@@ -1,20 +1,15 @@
-#include "main.h"
-/* more headers goes there */
+#include <unistd.h>
 
 /**
- * print_alphabet_x10 - print all alphabets
+ * _islower - checks if a character is lowercase or not
+ * @c: The character to check
  *
- *
+ * Return: On success 1.
+ * On error, 0 is returned.
  */
-void print_alphabet_x10(void)
+int _islower(int c)
 {
-	char ch;
-	int i;
-
-	for (i = 0; i <= 9; i++)
-	{
-		for (ch = 'a'; ch <= 'z'; ch++)
-			_putchar(ch);
-		_putchar('\n');
-	}
+	if (islower(c))
+		return (1);
+	return(0);
 }
