@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * print_last_digit - computes the absoulte value of an int.
- * @c: The character to be check
+ * jack_bauer - counts Jack's day.
  *
- * Return: Abs value
+ * 
  */
 void jack_bauer(void)
 {
