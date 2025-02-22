@@ -3,7 +3,6 @@
 /**
  * jack_bauer - counts Jack's day.
  *
- * 
  */
 void jack_bauer(void)
 {
