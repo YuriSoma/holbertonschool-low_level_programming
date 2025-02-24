@@ -19,7 +19,6 @@ void print_diagonal(int n)
 			for (c = 1; c <= b; c++)
 				_putchar(' ');
 		}
-		_putchar('\n');
 	}
 	else
 	{
