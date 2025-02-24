@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_line - prints lines, n times.
+ * print_diagonal - prints \ with space in new line, n times.
  * @n: the number of printing times.
  *
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int a;
 
