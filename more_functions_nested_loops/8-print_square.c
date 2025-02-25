@@ -9,6 +9,8 @@ void print_square(int size)
 {
 	int a, b;
 
+	if (size > 0)
+	{
 	for (a = size; a < 0; a--)
 	{
 		b = size;
@@ -19,4 +21,7 @@ void print_square(int size)
 		}
 		_putchar('\n');
 	}
+	}
+	else
+		_putchar('\n');
 }
