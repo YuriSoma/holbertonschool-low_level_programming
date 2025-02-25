@@ -1,28 +1,22 @@
 #include "main.h"
 
 /**
- * print_square - prints square with space in new line n times.
- * @n: the number of printing times.
+ * print_square - prints square as passing size.
+ * @size: the size of the square.
  *
  */
 void print_square(int size)
 {
 	int a, b;
 
-	if (n > 0)
+	for (a = size; a < 0; a--)
 	{
-		for (a = 0; a < n; a++)
+		b = size;
+		while (b < 0)
 		{
-			for (b = 0; b < a; b++)
-			{
-				_putchar(' ');
-			}
-			_putchar('\\');
-			_putchar('\n');
+			_putchar('#');
+			b--;
 		}
-	}
-	else
-	{
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
