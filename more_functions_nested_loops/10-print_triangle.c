@@ -7,29 +7,24 @@
  */
 void print_triangle(int size)
 {
-	int a, b;
+	int row, col;
 
 	if (size > 0)
 	{
-	for (a = 0; a < size; a++)
+	for (row = 0; row < size; row++)
 	{
-		b = 0;
-		while (b < size)
+		col = 1;
+		while (col < size)
 		{
-			if (b == a)
+			if (col = size - row)
 			{
-				while (b < size)
-				{
+				while (col < size)
 					_putchar('#');
-					b++;
-				}
+				col++;
 				break;
 			}
-			else
-			{
-				_putchar(' ');
-			}
-			b++;
+			_putchar(' ');
+			col++;
 		}
 		_putchar('\n');
 	}
