@@ -2,7 +2,8 @@
 
 /**
  * main - Entry point
- * @Decription: prints 1 - 100, replace multipies of 3 with Fizz,and multiplies 5 with buzz.
+ * @Decription: prints 1 - 100, replace multipies of 3 with Fizz
+ * ,and multiplies 5 with buzz.
  *
  *
  */
