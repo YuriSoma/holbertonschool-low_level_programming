@@ -21,7 +21,7 @@ void print_triangle(int size)
 				while (b < size)
 				{
 					_putchar('#');
-					b++
+					b++;
 				}
 				break;
 			}
