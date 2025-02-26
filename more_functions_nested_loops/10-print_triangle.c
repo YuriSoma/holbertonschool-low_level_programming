@@ -13,8 +13,8 @@ void print_triangle(int size)
 	{
 	for (row = 0; row < size; row++)
 	{
-		col = 0;
-		while (col < size)
+		col = 1;
+		while (col <= size)
 		{
 			if (col == size - row)
 			{
