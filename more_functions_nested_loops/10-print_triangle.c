@@ -16,10 +16,19 @@ void print_triangle(int size)
 		b = 0;
 		while (b < size)
 		{
-			if (b <= a)
-				_putchar(' ');
+			if (b == a)
+			{
+				while (b < size)
+				{
+					_putchar('#');
+					b++
+				}
+				break;
+			}
 			else
-				_putchar('#');
+			{
+				_putchar(' ');
+			}
 			b++;
 		}
 		_putchar('\n');
