@@ -13,6 +13,8 @@ char *_strchr(char *s, char c)
 	
 	for(i = 0; s[i] != c; s++)
 	{
+		if (s[i] == '\0')
+			return (NULL);
 	}
 	return(s);
 }
