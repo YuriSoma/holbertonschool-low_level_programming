@@ -24,11 +24,11 @@ char *_strstr(char *haystack, char *needle)
 				}
 				if (needle[y + 1] == '\0')
 				{
-					return (needle);
+					haystack += i;
+					return (haystack);
 				}
 				x++;
 			}
-
 		}
 	}
 	return (0);
