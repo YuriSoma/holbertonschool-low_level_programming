@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m " project 'C - Pointers, arrays and strings' pusher"
+git commit -m " project 'C - Recursion' pusher"
 git push
