@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _strpbrk - searches accept for first match char in s
- * @s: the string has the match char
- * @accept: string to be searched
+ * _strstr - searches *haystack for *needle
+ * @haystack: string to search in
+ * @needle: string to match in *haystack
  *
- * Return: retuns s with address from the matched char
+ * Return: retuns *haystack starts from *needle till the end or returns
+ * original *haystack if *needle is empty
  */
 char *_strstr(char *haystack, char *needle)
 {
