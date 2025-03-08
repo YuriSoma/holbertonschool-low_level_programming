@@ -9,13 +9,13 @@
  */
 void print_diagsums(int *a, int size)
 {
-	unsigned int i, x, sum1, sum2;
+	unsigned int i, x, sum1, sum2, usize;
 
-	for (i = 0; i < size * size; i += size + 1)
+	for (i = 0; i < usize * usize; i += usize + 1)
 	{
 		sum1 += a[i];
 	}
-	for (x = size - 1; x < size * size - 1; x += size - 1)
+	for (x = usize - 1; x < usize * usize - 1; x += usize - 1)
 	{
 		sum2 += a[x];
 	}
