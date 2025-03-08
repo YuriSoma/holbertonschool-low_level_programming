@@ -1,20 +1,30 @@
 #include "main.h"
 
 /**
- * _strspn - 
- * @s: the string
- * @c: letter to be located
+ * _strspn - searchs s for first match with accept
+ * @s: the string to be searched
+ * @accept: string of matching chars
  *
- * Return: s after locating c.
+ * Return: retuns the len of matching chars.
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
+	int i,x, len = 0;
 
-	for (i = 0; s[i] != c; s++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == '\0')
-			return (0);
+		for (x = 0; accept[x] != '\0'; x++)
+		{
+			if (s[i] == accept[x])
+			{
+				len++;
+				break;
+			}
+			if (accept[x] == '\0')
+			{
+				return (len);
+			}
+
+		}
 	}
-	return (s);
 }
