@@ -18,7 +18,10 @@ int rtroot(float x, float y)
 	{
 		return (-1);
 	}
-	rtroot(x, y + 1.0);
+	else
+	{
+		rtroot(x, y + 1.0);
+	}
 }
 
 /**
