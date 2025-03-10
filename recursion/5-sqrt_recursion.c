@@ -9,13 +9,13 @@
 int _sqrt_recursion(int n)
 {
 	int i;
-	float rtroot(float x, float y)
+	int rtroot(float x, float y)
 	{
 		if (x / y == y)
 		{
 			return (y);
 		}
-		elses if (y >= x)
+		else if (y >= x)
 		{
 			return (-1);
 		}
