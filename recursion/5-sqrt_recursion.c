@@ -31,6 +31,6 @@ int _sqrt_recursion(int n)
 {
 	int i;
 
-	i = return rtroot(n, 1.0);
+	i = return (rtroot(n, 1.0));
 	return (i);
 }
