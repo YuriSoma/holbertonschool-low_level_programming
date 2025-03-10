@@ -6,7 +6,7 @@
  * @x: given to finds its root.
  * @y: starter number with value 1.
  *
- * Return: y if y is the same result of x / y - or -1 if not or x has no root> 
+ * Return: y if y is the same result of x / y - or -1 if not or x has no root
  */
 int rtroot(float x, float y)
 {
