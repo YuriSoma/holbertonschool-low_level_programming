@@ -20,7 +20,7 @@ int rtroot(float x, float y)
 	}
 	else
 	{
-		rtroot(x, y + 1.0);
+		return (rtroot(x, y + 1.0));
 	}
 }
 
