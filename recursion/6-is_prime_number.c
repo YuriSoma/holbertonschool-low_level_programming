@@ -9,7 +9,7 @@
  */
 int n_checker(int n, int x)
 {
-	if (n < 1)
+	if (n <= 1)
 	{
 		return (0);
 	}
