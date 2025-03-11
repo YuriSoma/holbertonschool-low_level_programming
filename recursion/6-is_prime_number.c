@@ -22,7 +22,7 @@ int n_checker(int n, int x)
 		return (0);
 	}
 	else
-		return n_checker(n, x + 1);
+		return (n_checker(n, x + 1));
 }
 
 /**
@@ -33,5 +33,5 @@ int n_checker(int n, int x)
  */
 int is_prime_number(int n)
 {
-	return n_checker(n, 2);
+	return (n_checker(n, 2));
 }
