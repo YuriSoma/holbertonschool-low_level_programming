@@ -2,15 +2,16 @@
 
 /**
  * main - Entry point and prints every argument in new line ends with new line.
- * @argc: arguments counter
+ * @argc: arguments counter (Unused)
  * @argv: pointer of the argument vector which is an array of all arguments.
  *
  * Return: Always 0.
  */
-int main(int argc__attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
 	int i = 0, x;
-
+	
+	(void)argc;
 	while (argv[i])
 	{
 		for (x = 0; argv[i][x] != '\0'; x++)
