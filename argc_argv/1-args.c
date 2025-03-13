@@ -7,14 +7,8 @@
  *
  * Return: Always 0.
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]__attribute__((unused)))
 {
-	int i = 0;
-
-	while (argv[i])
-	{
-		i++;
-	}
 	if (argc <= 9)
 		_putchar((argc - 1) + '0');
 	_putchar('\n');
