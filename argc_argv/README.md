@@ -1,1 +1,1 @@
-This is a directory for all tasks of Holberton School "C - argc, argv"
+This is a directory for all tasks of Holberton School "C - argc, argv".
