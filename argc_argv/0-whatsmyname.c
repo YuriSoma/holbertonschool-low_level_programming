@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < *argv[argc - 1]; i++)
 	{
-		_putchar(argv[0][i]);
+		_putchar(argv[0]);
 	}
         return (0);
 }
