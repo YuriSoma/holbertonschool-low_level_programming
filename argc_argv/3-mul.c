@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = argv[1], x = argv[2];
+	int i = *argv[1], x = *argv[2];
 
 	(void)argc;
 	if(argv[i] && argv[x])
