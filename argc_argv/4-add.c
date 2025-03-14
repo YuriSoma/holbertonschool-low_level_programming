@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		{
 			if (argv[i][x] < 48 || argv[i][x] > 57)
 			{
-				print("Error\n");
+				printf("Error\n");
 				return (1);
 			}
 		}
