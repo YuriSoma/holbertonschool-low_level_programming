@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
 
-	if (i < argc)
-		printf("Batates");
+	if (argc == 1)
+		return (0);
 	while (i <= argc)
 	{
 		int x;
