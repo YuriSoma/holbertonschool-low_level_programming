@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
 	{
 		if (atoi(argv[i]))
 		{
+			int it;
+			for (it = 0; argv[i][it] != '\0'; it++)
 			sum += atoi(argv[i]);
 		}
 		else
