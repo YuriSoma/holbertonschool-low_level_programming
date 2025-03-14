@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int i = atoi(argv[1]), x = atoi(argv[2]);
 
 	(void)argc;
-	if(argv[i] && argv[x])
+	if(argv[1] && argv[2])
 	{
 		printf("%d\n", i * x);
 	}
