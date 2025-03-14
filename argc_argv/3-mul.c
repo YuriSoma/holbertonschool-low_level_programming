@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = atoi(*argv[1]), x = atoi(*argv[2]);
+	int i = atoi(argv[1]), x = atoi(argv[2]);
 
 	(void)argc;
 	if(argv[i] && argv[x])
