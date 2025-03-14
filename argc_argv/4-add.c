@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
 
+	(void)argc;
 	while (argv[i])
 	{
 		if (atoi(argv[i]))
