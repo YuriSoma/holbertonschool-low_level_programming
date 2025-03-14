@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
 
-	if (atoi(argv[i]))
-	{
+	if (i < argc)
+		printf("Batates")
 	while (i <= argc)
 	{
 		int x;
@@ -32,9 +32,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", sum);
 	return (0);
-	}
-	else
-	{
-		return (0);
-	}
 }
