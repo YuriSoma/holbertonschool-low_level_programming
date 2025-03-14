@@ -14,20 +14,20 @@ int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
 
-	(void)argc;
-	while (argv[i])
+	if (argc == 1)
+		return (0);
+	while (i < argc)
 	{
-		if (atoi(argv[i]))
+		int x;
+		for (x = 0; argv[i][x] != '\0'; x++)
 		{
-			int it;
-			for (it = 0; argv[i][it] != '\0'; it++)
-			sum += atoi(argv[i]);
+			if (argv[i][x] < 48 || argv[i][x] > 57)
+			{
+				print("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		sum += atoi(argv[i]);
 		i++;
 	}
 	printf("%d\n", sum);
