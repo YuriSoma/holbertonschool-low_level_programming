@@ -11,12 +11,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1, x = 2;
+	int i = argv[1], x = argv[2];
 
 	(void)argc;
 	if(argv[i] && argv[x])
 	{
-		printf("%d\n", (int)*argv[i] * (int)*argv[x]);
+		printf("%d\n", i * x);
 	}
 	else
 	{
