@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	(void)argc;
 	if(argv[i] && argv[x])
 	{
-		printf("%d\n", (int)argv[i] * (int)argv[x]);
+		printf("%d\n", *argv[i] * *argv[x]);
 	}
 	else
 	{
