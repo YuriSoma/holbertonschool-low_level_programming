@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
 
-	if (argc == 1)
+	if (argc == 0)
 		return (0);
-	while (i < argc)
+	while (i <= argc)
 	{
 		int x;
 		for (x = 0; argv[i][x] != '\0'; x++)
