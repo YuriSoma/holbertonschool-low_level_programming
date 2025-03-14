@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	while (i < argc)
 	{
 		int x;
+
 		for (x = 0; argv[i][x] != '\0'; x++)
 		{
 			if (argv[i][x] < 48 || argv[i][x] > 57)
