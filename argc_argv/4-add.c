@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 		return (0);
-	while (i <= argc)
+	while (i < argc)
 	{
 		int x;
 		for (x = 0; argv[i][x] != '\0'; x++)
