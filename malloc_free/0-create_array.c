@@ -17,5 +17,5 @@ char *create_array(unsigned int size, char c)
 	init_arr[0] = c;
 	if (!init_arr)
 		return (0);
-	return (init_arr);
+	return (init_arr[0]);
 }
