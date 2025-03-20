@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	/* malloc */
-	conc_str = malloc(sizeof(char) * (len + 1));
+	conc_str = malloc(sizeof(char) * (len));
 
 	/* fill both strings to the newly allocated address */
 	i = 0;
