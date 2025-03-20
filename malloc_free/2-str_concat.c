@@ -14,11 +14,7 @@ char *str_concat(char *s1, char *s2)
 	/* needed variables declaration */
 	int len = 0, i = 0, x = 0;
 	char *conc_str;
-	/**
-	 * counts the length of the every string
-	 * if it's not NULL - NULL will be treated
-	 * as empty string.
-	 */
+	/* count length of both strings */
 	if (s1)
 	{
 		while (s1[i] != '\0')
