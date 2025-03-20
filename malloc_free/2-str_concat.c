@@ -11,7 +11,6 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	/* needed variables declaration */
 	int len = 0, i = 0, x = 0;
 	char *conc_str;
 	/* count length of both strings */
@@ -36,11 +35,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 		s2 = "";
-	/* malloc */
 	conc_str = malloc(sizeof(char) * (len + 1));
 	if (!conc_str)
 		return (0);
-	/* fill both strings to the newly allocated address */
 	i = 0;
 	while (s1[i] != '\0')
 	{
@@ -53,8 +50,6 @@ char *str_concat(char *s1, char *s2)
 		x++;
 		i++;
 	}
-	/* add NULL terminator to the end of the concatenated string*/
 	conc_str[i] = '\0';
-	/* return the newly pointer or NULL if allocation failed*/
 	return (conc_str);
 }
