@@ -2,16 +2,15 @@
 #include <stdlib.h>
 
 /**
- * create_array - Function to create an array initilized with c using malloc.
- * @size: size of the array
- * @c: character that the array initilized with.
+ * _strdup - Allocates a space on memory with a duplicate of str
+ * @str: passed string to be duplicated
  *
- * Return: 0 on failure or if size equals 0 otherwise returns the pointer.
+ * Return: 0 if str is NULL or if allocation failed, or new pointer on success.
  */
 char *_strdup(char *str)
 {
 	int i = 0;
-	char *p;
+	char *dup;
 
 	if (!str)
 		return (0);
@@ -19,14 +18,15 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	p = malloc(sizeof(str) * (i + 1));
-	if (!p)
+	dup = malloc(sizeof(str) * (i + 1));
+	if (!dup)
 		return (0);
 	i = 0;
 	while (str[i] != '\0')
         {
-                p[i] = str[i];
+                dup[i] = str[i];
 		i++;
         }
+	dup[i] = '\0';
 	return (p);
 }
