@@ -43,6 +43,8 @@ char *str_concat(char *s1, char *s2)
 
 	/* malloc */
 	conc_str = malloc(sizeof(char) * (len + 1));
+	if (!conc_str)
+		return (0);
 
 	/* fill both strings to the newly allocated address */
 	i = 0;
@@ -62,7 +64,5 @@ char *str_concat(char *s1, char *s2)
 	conc_str[i] = '\0';
 
 	/* return the newly pointer or NULL if allocation failed*/
-	if (!conc_str)
-		return (0);
 	return (conc_str);
 }
