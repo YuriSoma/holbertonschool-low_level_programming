@@ -35,14 +35,10 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 		s2 = "";
-	if (!conc_str = malloc(sizeof(char) * (len + 1)))
+	if (!conc_str)
 		return (0);
-	i = 0;
-	while (s1[i] != '\0')
-	{
+	for (i = 0; s1[i] != '\0'; i++)
 		conc_str[i] = s1[i];
-		i++;
-	}
 	while (s2[x] != '\0')
 	{
 		conc_str[i] = s2[x];
