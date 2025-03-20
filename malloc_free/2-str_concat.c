@@ -15,24 +15,31 @@ char *str_concat(char *s1, char *s2)
 	int len = 0, i = 0, x = 0;
 	char *conc_str;
 
-	/* checks parameters if any is NULL */
-	if (!s1)
-		s1[0] = '\0';
-	if (!s2)
-		s2[0] = '\0';
-
-	/* counts the length */
-	while (s1[i] != '\0')
+	/* counts the length of the every string
+	 * if it's not NULL - NULL will be treated
+	 * as empty string.
+	 */
+	if (s1)
 	{
-		len++;
-		i++;
+		while (s1[i] != '\0')
+		{
+			len++;
+			i++;
+		}
 	}
+	else
+		s1 = "";
 	i = 0;
-	while (s2[i] != '\0')
+	if (s2)
 	{
-		len++;
-		i++;
+		while (s2[i] != '\0')
+		{
+			len++;
+			i++;
+		}
 	}
+	else
+		s2 = "";
 
 	/* malloc */
 	conc_str = malloc(sizeof(char) * (len + 1));
