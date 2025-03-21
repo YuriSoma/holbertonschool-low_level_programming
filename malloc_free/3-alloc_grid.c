@@ -26,7 +26,7 @@ int **alloc_grid(int width, int height)
 
 	/* malloc 1d array for every width by height and check if it fails */
 	for (i = 0; i < height; i++)
-		grid_arr = malloc(sizeof(int) * width);
+		grid_arr[i] = malloc(sizeof(int) * width);
 	if (!grid_arr)
                 return (0);
 
