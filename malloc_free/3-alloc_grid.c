@@ -12,8 +12,8 @@
 int **alloc_grid(int width, int height)
 {
 	/* Declare required variables */
-        int **grid_arr;
-        int i;
+	int **grid_arr;
+	int i;
 
 	/* checks if any parameter is <= 0 */
 	if (width <= 0 || height <= 0)
