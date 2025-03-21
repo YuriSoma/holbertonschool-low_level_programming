@@ -16,7 +16,8 @@ int **alloc_grid(int width, int height)
 		return (0);
 
 	/* Declare required variables */
-	int **grid_arr, i;
+	int **grid_arr;
+	int i;
 
 	/* malloc 1d array for height and check if it fails */
 	grid_arr = malloc(sizeof(int *) * height);
