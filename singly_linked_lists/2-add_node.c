@@ -5,7 +5,7 @@
 
 /**
  * add_node - adds new element for a giving list.
- * @head: pointer of a pointer to a list. 
+ * @head: pointer of a pointer to a list.
  * @str: a string to be duplicated to the new node.
  *
  * Return: the address of the new created node.
