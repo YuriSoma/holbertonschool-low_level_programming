@@ -1,8 +1,11 @@
 #include "lists.h"
 
 /**
- * free_dlistint - free all allocated memory of the given list.
+ * get_dnodeint_at_index - get the a list node by its index.
  * @head: The passed doubly linked list.
+ * @index: node index to search with.
+ *
+ * Return: the returned node.
  *
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
